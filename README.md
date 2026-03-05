@@ -42,6 +42,7 @@ Segmentation visualization results in the full borehole image.
 ## Getting Started
 
 1. 🚀 Quick Start
+For a quick test, you can download our weights trained on drill images here at https://pan.baidu.com/s/1ZzkVljoXAeQam3nEx7F5OQ?pwd=iykz passwords: iykz
 ```bash
 cd tools/
 python testings.py -i ../datasets/inputs/your_test_dir -r your_save_img/
