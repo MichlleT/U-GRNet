@@ -135,16 +135,12 @@ class CustomDataset(Dataset):
         pass
 
     def get_image(self, img_info):
-        # img1 = cv2.imread(img_info['img']['img1_path'])
+        img1 = cv2.imread(img_info['img']['img1_path'])
         # print(img_info['img']['img1_path'])
-        # img1 = cv2.cvtColor(cv2.imread(img_info['img']['img1_path']))
-        # print(img1.shape)
-        img1 = cv2.cvtColor(cv2.imread(img_info['img']['img1_path']), cv2.COLOR_BGR2RGB)
         return img1
 
     def get_gt_seg_maps(self, img_info, vis=False):
-        # ann = cv2.imread(img_info['ann']['ann_path'], cv2.IMREAD_GRAYSCALE)
-        ann = cv2.imread(img_info['ann']['ann_path'], 0)
+        ann = cv2.imread(img_info['ann']['ann_path'], cv2.IMREAD_GRAYSCALE)
         # ann = ann / 255 if not vis else ann
         return ann
 
